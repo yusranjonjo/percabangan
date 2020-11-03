@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helllo if-else-if 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Helllo if-else-if 1</h1>
+
+    <script>
+        let nilai = parseFloat(prompt("Inputkan nilai: "));
+        let dapatNilai = "";
+
+        if (nilai >= 90) {
+            dapatNilai = "A"
+        } else if (nilai >= 80) {
+            dapatNilai = "B"
+        } else if (nilai >= 70) {
+            dapatNilai = "B"
+        } else if (nilai >= 60) {
+            dapatNilai = "C+"
+        } else if (nilai >= 50) {
+            dapatNilai = "C"
+        } else if (nilai >= 40) {
+            dapatNilai = "D"
+        } else if (nilai >= 30) {
+            dapatNilai = "E"
+        } else {
+            dapatNilai = "F";
+        }
+
+
+        document.write(`<p>Anda mendapat nilai: ${dapatNilai}</p>`);
+    </script>
+</body>
+
+</html>
