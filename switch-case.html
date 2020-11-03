@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch-case percabangan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Hello switch-case percabangan</h1>
+
+    <script>
+        // Percabangan switch/case adalah bentuk lain dari percabangan if/else/if.
+        //===========================
+        // STRUKTUR DASAR SWITCH =====
+        // ===========================
+        /*
+        switch(variabel){
+        case <value>:
+            // blok kode
+            break;
+        case <value>:
+            // blok kode
+            break;
+        default:
+            // blok kode
+    }
+         */
+
+        // ==============================================
+
+        let jawab = prompt("Kamu beruntung! Silahakn pilih hadiahmu dengan memasukan angka 1 sampai 5");
+        let hadiah = "";
+
+        switch (jawab) {
+            case "1": hadiah = "Uang tunai 1 Milyar";
+                break;
+            case "2": hadiah = "Istri Pintar & Cantik";
+                break;
+            case "3": hadiah = "1 Buah Mobil Toyota Hilux";
+                break;
+            case "4": hadiah = "Rumah 3 lantai";
+                break;
+            case "5": hadiah = "Tanah 10 hektar";
+                break;
+            default:
+                document.write("<p>Opps! anda salah pilih</p>");
+        }
+
+        if (hadiah === "") {
+            document.write("<p>Kamu gagal mendapat hadiah</p>");
+        } else {
+            document.write("<p>Selamat kamu mendapatkan " + hadiah + "</p>");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
