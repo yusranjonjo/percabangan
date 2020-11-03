@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(7, 26, 43);
+}
+
+h1 {
+    color: white;
+    font-family: 'poppins';
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 200px auto;
+}
