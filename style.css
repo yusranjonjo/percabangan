@@ -10,5 +10,15 @@ h1 {
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 200px auto;
+    margin-top: 200px;
+}
+
+p {
+    color: white;
+    font-family: 'poppins';
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }

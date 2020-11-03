@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan if-else-if</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Hello if-else-if</h1>
+
+    <script>
+        // Percabangan if/else/if merupakan percabangan yang memiliki lebih dari dua blok pilihan.
+
+        let nilai = parseFloat(prompt("Inputkan nilai: "));
+        let dapatNilai = "";
+
+        if (nilai >= 90) dapatNilai = "A"
+        else if (nilai >= 80) dapatNilai = "B+"
+        else if (nilai >= 70) dapatNilai = "B"
+        else if (nilai >= 60) dapatNilai = "C+"
+        else if (nilai >= 50) dapatNilai = "C"
+        else if (nilai >= 40) dapatNilai = "D"
+        else if (nilai >= 30) dapatNilai = "E"
+        else dapatNilai = "F";
+
+        document.write(`<p>Anda mendapatkan Nilai : ${dapatNilai}</p>`);
+
+        // Pada program di atas, kita tidak menggunaka kurung kurawal untuk membuat blok kode untuk if/else/if.
+     // karena hanya terdapat satu baris perintah saja.Yaitu: grade = ....
+
+    </script>
+</body>
+
+</html>
