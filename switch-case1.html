@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch-case 1 - percabangan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Hello Switch-case 1 - percabangan</h1>
+
+
+    <script>
+        // let nilai = parseFloat(prompt("input nilai : "));
+        // let dapatNilai = "";
+
+        // switch (true) {
+        //     case nilai < 90: dapatNilai = "A";
+        //         break;
+        //     case nilai < 80: dapatNilai = "B+";
+        //         break;
+        //     case nilai < 70: dapatNilai = "B";
+        //         break;
+        //     case nilai < 60: dapatNilai = "C+";
+        //         break;
+        //     case nilai < 50: dapatNilai = "C";
+        //         break;
+        //     case nilai < 40: dapatNilai = "D";
+        //         break;
+        //     case nilai < 30: dapatNilai = "E";
+        //         break;
+        //     default: dapatNilai = "F";
+        // }
+
+        var nilai = prompt("input nilai");
+        var grade = "";
+
+        switch (true) {
+            case nilai >= 90:
+                grade = "A";
+                break;
+            case nilai >= 80:
+                grade = "B+";
+                break;
+            case nilai >= 70:
+                grade = "B";
+                break;
+            case nilai >= 60:
+                grade = "C+";
+                break;
+            case nilai >= 50:
+                grade = "C";
+                break;
+            case nilai >= 40:
+                grade = "D";
+                break;
+            case nilai >= 30:
+                grade = "E";
+                break;
+            default:
+                grade = "F";
+        }
+
+        document.write(`<p>nilai anda : ${grade}</p>`)
+
+        /*
+         berikan nilai true pada switch, ini agar kita bisa masuk ke dalam blok switch.
+         Lalu di dalam blok switch, kita buat kondisi dengan menggunakan case.
+         
+         Hasilnya akan sama seperti pada contoh percabangan if/else/if.
+        */
+
+    </script>
+
+</body>
+
+</html>
