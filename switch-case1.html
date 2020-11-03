@@ -13,62 +13,32 @@
 
 
     <script>
-        // let nilai = parseFloat(prompt("input nilai : "));
-        // let dapatNilai = "";
-
-        // switch (true) {
-        //     case nilai < 90: dapatNilai = "A";
-        //         break;
-        //     case nilai < 80: dapatNilai = "B+";
-        //         break;
-        //     case nilai < 70: dapatNilai = "B";
-        //         break;
-        //     case nilai < 60: dapatNilai = "C+";
-        //         break;
-        //     case nilai < 50: dapatNilai = "C";
-        //         break;
-        //     case nilai < 40: dapatNilai = "D";
-        //         break;
-        //     case nilai < 30: dapatNilai = "E";
-        //         break;
-        //     default: dapatNilai = "F";
-        // }
-
-        var nilai = prompt("input nilai");
-        var grade = "";
+        let nilai = parseFloat(prompt("input nilai : "));
+        let dapatNilai = "";
 
         switch (true) {
-            case nilai >= 90:
-                grade = "A";
+            case nilai >= 90: dapatNilai = "A";
                 break;
-            case nilai >= 80:
-                grade = "B+";
+            case nilai >= 80: dapatNilai = "B+";
                 break;
-            case nilai >= 70:
-                grade = "B";
+            case nilai >= 70: dapatNilai = "B";
                 break;
-            case nilai >= 60:
-                grade = "C+";
+            case nilai >= 60: dapatNilai = "C+";
                 break;
-            case nilai >= 50:
-                grade = "C";
+            case nilai >= 50: dapatNilai = "C";
                 break;
-            case nilai >= 40:
-                grade = "D";
+            case nilai >= 40: dapatNilai = "D";
                 break;
-            case nilai >= 30:
-                grade = "E";
+            case nilai >= 30: dapatNilai = "E";
                 break;
-            default:
-                grade = "F";
+            default: dapatNilai = "F";
         }
 
-        document.write(`<p>nilai anda : ${grade}</p>`)
+        document.write(`<p>Anda mendapat nilai ${dapatNilai}</p>`);
 
         /*
          berikan nilai true pada switch, ini agar kita bisa masuk ke dalam blok switch.
          Lalu di dalam blok switch, kita buat kondisi dengan menggunakan case.
-         
          Hasilnya akan sama seperti pada contoh percabangan if/else/if.
         */
 
